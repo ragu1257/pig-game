@@ -8,10 +8,26 @@
     <title>Pig Game</title>
   </head>
   <body>
+    <!-- Game Description Modal -->
+    <div id="game-description-modal" class="modal">
+      <div class="modal-content">
+        <h2>Welcome to the Pig Game!</h2>
+        <p>
+          The objective of the game is to be the first player to score 50
+          points. Players take turns rolling a dice and accumulate the result in
+          their current score. If a player rolls a 1, their turn ends and they
+          lose their accumulated score. Players can choose to "Hold" and add
+          their current score to their total score, but they risk losing their
+          turn if they roll a 1.
+        </p>
+        <button id="start-game-btn" class="btn">Start Game</button>
+      </div>
+    </div>
+
     <main>
       <section class="player player--0 player--active">
-        <h2 class="name" id="name--0">Player 11</h2>
-        <p class="score" id="score--0">43</p>
+        <h2 class="name" id="name--0">Player 1</h2>
+        <p class="score" id="score--0">0</p>
         <div class="current">
           <p class="current-label">Current</p>
           <p class="current-score" id="current--0">0</p>
@@ -19,7 +35,7 @@
       </section>
       <section class="player player--1">
         <h2 class="name" id="name--1">Player 2</h2>
-        <p class="score" id="score--1">24</p>
+        <p class="score" id="score--1">0</p>
         <div class="current">
           <p class="current-label">Current</p>
           <p class="current-score" id="current--1">0</p>
